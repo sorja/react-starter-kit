@@ -3,9 +3,9 @@
  1. Merge `feature/react-intl` branch with git.
     Because react-intl integration is built on top of `feature/redux`, you'll also get all the features.
 
- 2. Adjust `INTL_REQUIRE_DESCRIPTIONS` constant in `tools/webpack.config.js` around line 17:
+ 2. Adjust `REACT_INTL_ENFORCE_DESCRIPTIONS` constant in `tools/webpack.config.js` around line 17:
     ```js
-    const INTL_REQUIRE_DESCRIPTIONS = true;
+    const REACT_INTL_ENFORCE_DESCRIPTIONS = true;
     ```
     When this boolean is set to true, the build will only succeed if a `description` is set for every message descriptor.
 
